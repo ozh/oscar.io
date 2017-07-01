@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html class="no-js">
 <!-- This domain is not for sale. Thanks. -->
 <head>
 <meta charset="utf-8">
@@ -7,18 +6,83 @@
 <title>Oscar RICHARD &mdash; oscar.io</title>
 <meta name="description" content="Oscar RICHARD">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="style.css">
+<style>
+body {
+  background-color: #8d1c10;
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 350px;
+    height: 350px;
+    margin: -150px 0 0 -150px;
+    border-radius: 50%;
+    border: 63px solid transparent;
+    border-top-color: #bfff00;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 23px solid transparent;
+    border-top-color: #0036d9;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFCCFF;
+    -webkit-animation: spin 5.5s linear infinite;
+    animation: spin 5.5s linear infinite;
+}
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}</style>
 </head>
 <body>
-
-<div id="about">
-	<h1>Oscar RICHARD</h1>
-	<h2>&#111;sca&#114;&#64;&#111;&#115;&#99;&#97;&#114;&#46;&#105;o</h2>
+<div id="preloader">
+  <div id="loader"></div>
 </div>
-
-<div id="oscar">
-	<img src="oscar-richard.png" alt="oscar richard" />
-</div>
-
-</body>
-</html>
